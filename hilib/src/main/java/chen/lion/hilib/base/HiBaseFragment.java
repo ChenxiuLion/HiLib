@@ -13,6 +13,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import chen.lion.hilib.HiApp;
+
 /**
  * Fragment封装父类
  * 所有Fragment继承此类可以重写两个核心方法
@@ -46,6 +48,7 @@ public abstract class HiBaseFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        HiApp.init(this);
         mShared = getActivity().getSharedPreferences(getActivity().getPackageName(), Context.MODE_PRIVATE);
         initData();
         super.onViewCreated(view, savedInstanceState);
@@ -62,6 +65,10 @@ public abstract class HiBaseFragment extends Fragment {
         }
         startActivity(intent);
 
+    }
+
+    public <T extends View> T findViewById(int id){
+        return mView.findViewById(id);
     }
 
     protected abstract int initLayout();

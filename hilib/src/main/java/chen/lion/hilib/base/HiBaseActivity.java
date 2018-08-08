@@ -6,6 +6,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
+import android.widget.Toast;
+
+import chen.lion.hilib.HiApp;
 
 /**
  * Activity封装父类
@@ -14,7 +17,8 @@ import android.support.v4.app.FragmentActivity;
  * initLayout() 页面布局资源id
  *
  * 包含子类可调用方法：
- * goActivity(Class c,Bundle b)   代替startActivity,直接传入类名即可跳转，Bundle参数可不传
+ * goActivity(Class c,Bundle b)   代替startActivity,直接传入类名即可跳转，Bundle参数可不传\
+ * showToast(String text)   TOAST提示
  * 上午11:42
  * by chenxiu
  **/
@@ -33,6 +37,7 @@ public abstract class HiBaseActivity extends FragmentActivity {
         mShare = getSharedPreferences(BASENAME,MODE_PRIVATE);
         setContentView(initLayout());
         mContext = this;
+        HiApp.init(this);
         initData();
     }
 
@@ -50,5 +55,9 @@ public abstract class HiBaseActivity extends FragmentActivity {
         Intent i = new Intent(this,c);
         i.putExtras(b);
         startActivity(i);
+    }
+
+    public void showToast(String text){
+        Toast.makeText(this,text,Toast.LENGTH_SHORT).show();
     }
 }
