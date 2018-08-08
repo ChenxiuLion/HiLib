@@ -1,13 +1,33 @@
 package chen.lion.hi;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+
+import android.view.View;
+import android.widget.TextView;
+
+import chen.lion.hilib.base.HiBaseActivity;
+import chen.lion.hilib.view.bind.HiView;
+
+public class MainActivity extends HiBaseActivity {
+
+    /**
+     * 注解绑定View
+     */
+    @HiView(R.id.hiworld)
+    public TextView mHiTextView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int initLayout() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void initData() {
+        mHiTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showToast("绑定成功");
+            }
+        });
     }
 }
