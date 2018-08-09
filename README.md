@@ -15,7 +15,7 @@ allprojects {
 
 **App的build.gradle依赖**
 ```java
-	implementation 'com.github.ChenxiuLion:Hi:1.0.3'
+  implementation 'com.github.ChenxiuLion:Hi:1.0.3'
 ```
 
 **Application的onCreate中加入：**
