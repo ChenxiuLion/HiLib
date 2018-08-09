@@ -17,7 +17,7 @@ allprojects {
 **App的build.gradle依赖**
 ```
 dependencies {
-	        implementation 'com.github.ChenxiuLion:Hi:1.0.2'
+	        implementation 'com.github.ChenxiuLion:Hi:1.0.3'
 	}
 ```
 
