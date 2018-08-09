@@ -37,7 +37,7 @@ public abstract class HiBaseActivity extends FragmentActivity {
         mShare = getSharedPreferences(BASENAME,MODE_PRIVATE);
         setContentView(initLayout());
         mContext = this;
-        HiApp.init(this);
+        HiApp.initView(this);
         initData();
     }
 

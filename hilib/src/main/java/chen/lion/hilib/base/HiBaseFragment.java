@@ -48,7 +48,7 @@ public abstract class HiBaseFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        HiApp.init(this);
+        HiApp.initView(this);
         mShared = getActivity().getSharedPreferences(getActivity().getPackageName(), Context.MODE_PRIVATE);
         initData();
         super.onViewCreated(view, savedInstanceState);
