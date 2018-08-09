@@ -1,4 +1,4 @@
-快速开发包> HiLib
+2018最轻量级快速开发包> HiLib（注解绑定、网络交互、文件下载、持续更新）
 ===
 [![](https://jitpack.io/v/ChenxiuLion/Hi.svg)](https://jitpack.io/#ChenxiuLion/Hi)  
 
