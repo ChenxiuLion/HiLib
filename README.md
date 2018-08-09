@@ -70,7 +70,7 @@ allprojects {
     }
 
 ```
-具体请阅读源码Http类 借鉴[https://github.com/guozhengXia/UrlHttpUtils](https://github.com/guozhengXia/UrlHttpUtils)
+具体请阅读源码Http类 
 ---
 1.0.2版本说明：
 ---
