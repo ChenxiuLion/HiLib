@@ -1,6 +1,6 @@
 2018最轻量级快速开发包> HiLib（注解绑定、网络交互、文件下载、持续更新）
 ===
-[![](https://jitpack.io/v/ChenxiuLion/Hi.svg)](https://jitpack.io/#ChenxiuLion/Hi)  [![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-ChenxiuLion-orange.svg)](https://github.com/ChenxiuLion)   [![](https://img.shields.io/badge/platform-android-brightgreen.svg)](https://developer.android.com/index.html) 
+[![](https://jitpack.io/v/ChenxiuLion/Hi.svg)](https://jitpack.io/#ChenxiuLion/Hi)  [![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-ChenxiuLion-orange.svg)](https://github.com/ChenxiuLion)   [![](https://img.shields.io/badge/platform-android-brightgreen.svg)](https://developer.android.com/index.html)    [![](https://img.shields.io/badge/Wechat-ncmmss852369-brightgreen.svg)](https://wx.qq.com) 
 ---
 **项目的build.gradle 写入**
 
