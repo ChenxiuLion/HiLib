@@ -4,7 +4,7 @@
 ---
 **项目的build.gradle 写入**
 
-```
+```java
 allprojects {
 		repositories {
 			...
@@ -14,14 +14,14 @@ allprojects {
 ```
 
 **App的build.gradle依赖**
-```
+```java
 dependencies {
 	        implementation 'com.github.ChenxiuLion:Hi:1.0.3'
 	}
 ```
 
 **Application的onCreate中加入：**
-```
+```java
     @Override
     public void onCreate() {
         super.onCreate();
@@ -33,7 +33,7 @@ dependencies {
 1.0.3版本新增：
 ---
 ***1.Http类，使用方法：***
-```
+```java
     HiApp.http.get("https://api.github.com/", new HiCallback.ToString() {
                     @Override
                     public void onFailure(int code, String errorMessage) {
@@ -47,7 +47,7 @@ dependencies {
                 });
 ```
 包含get、post、图片下载压缩、文件上传下载等功能：
-```
+```java
    /**
      * get请求
      * @param url：url
@@ -59,7 +59,7 @@ dependencies {
 
 
 ```
-```
+```java
     /**
      * post请求，可以传递参数
      * @param url：url
