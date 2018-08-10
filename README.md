@@ -1,11 +1,10 @@
-快速开发包> HiLib
+2018最轻量级快速开发包> HiLib（注解绑定、网络交互、文件下载、持续更新）
 ===
-[![](https://jitpack.io/v/ChenxiuLion/Hi.svg)](https://jitpack.io/#ChenxiuLion/Hi)
-1.0.2版本包含基类、注解绑定、常用utils
+[![](https://jitpack.io/v/ChenxiuLion/Hi.svg)](https://jitpack.io/#ChenxiuLion/Hi)  [![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-ChenxiuLion-orange.svg)](https://github.com/ChenxiuLion)   [![](https://img.shields.io/badge/platform-android-brightgreen.svg)](https://developer.android.com/index.html)    [![](https://img.shields.io/badge/Wechat-ncmmss852369-brightgreen.svg)](https://wx.qq.com) 
 ---
 **项目的build.gradle 写入**
 
-```
+```java
 allprojects {
 		repositories {
 			...
@@ -15,14 +14,12 @@ allprojects {
 ```
 
 **App的build.gradle依赖**
-```
-dependencies {
-	        implementation 'com.github.ChenxiuLion:Hi:1.0.2'
-	}
+```java
+  implementation 'com.github.ChenxiuLion:Hi:1.0.3'
 ```
 
 **Application的onCreate中加入：**
-```
+```java
     @Override
     public void onCreate() {
         super.onCreate();
@@ -34,7 +31,7 @@ dependencies {
 1.0.3版本新增：
 ---
 ***1.Http类，使用方法：***
-```
+```java
     HiApp.http.get("https://api.github.com/", new HiCallback.ToString() {
                     @Override
                     public void onFailure(int code, String errorMessage) {
@@ -48,7 +45,7 @@ dependencies {
                 });
 ```
 包含get、post、图片下载压缩、文件上传下载等功能：
-```
+```java
    /**
      * get请求
      * @param url：url
@@ -60,7 +57,7 @@ dependencies {
 
 
 ```
-```
+```java
     /**
      * post请求，可以传递参数
      * @param url：url
@@ -73,7 +70,7 @@ dependencies {
     }
 
 ```
-具体请阅读源码Http类
+具体请阅读源码Http类 
 ---
 1.0.2版本说明：
 ---
