@@ -53,7 +53,9 @@ public abstract class HiBaseActivity extends FragmentActivity {
 
     public void goActivity(Class c,Bundle b){
         Intent i = new Intent(this,c);
-        i.putExtras(b);
+        if(b!=null) {
+            i.putExtras(b);
+        }
         startActivity(i);
     }
 

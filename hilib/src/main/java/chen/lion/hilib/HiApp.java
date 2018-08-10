@@ -12,7 +12,9 @@ import com.yanzhenjie.nohttp.cookie.DBCookieStore;
 
 import chen.lion.hilib.base.HiBaseFragment;
 import chen.lion.hilib.http.Http;
+import chen.lion.hilib.image.ImageLoader;
 import chen.lion.hilib.view.bind.HiViewUtil;
+import chen.lion.hilib.view.photo.Photo;
 
 /**
  * 核心入口类
@@ -23,11 +25,15 @@ public class HiApp {
 
 
     public static Http http;
-    public static Context mApp;
+    public static Photo photo;
+    public static ImageLoader image;
+    private  static Context mApp;
 
     public static void init(Application application) {
         mApp = application;
         http = new Http();
+        photo = new Photo();
+        image = ImageLoader.with(mApp);
 
     }
 

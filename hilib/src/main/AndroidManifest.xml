@@ -1,2 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="chen.lion.hilib" />
+    package="chen.lion.hilib" >
+
+    <application>
+        <activity android:name=".view.photo.HiPhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            />
+    </application>
+</manifest>

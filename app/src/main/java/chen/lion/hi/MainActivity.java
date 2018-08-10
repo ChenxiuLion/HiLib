@@ -10,6 +10,7 @@ import chen.lion.hilib.HiApp;
 import chen.lion.hilib.base.HiBaseActivity;
 import chen.lion.hilib.http.HiCallback;
 import chen.lion.hilib.view.bind.HiView;
+import chen.lion.hilib.view.photo.HiPhotoActivity;
 
 public class MainActivity extends HiBaseActivity {
 
@@ -33,19 +34,21 @@ public class MainActivity extends HiBaseActivity {
         mHiTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                HiApp.http.get("https://api.github.com/", new HiCallback.ToString() {
-                    @Override
-                    public void onFailure(int code, String errorMessage) {
+//                HiApp.http.get("https://api.github.com/", new HiCallback.ToString() {
+//                    @Override
+//                    public void onFailure(int code, String errorMessage) {
+//
+//                    }
+//
+//                    @Override
+//                    public void onResponse(String response) {
+//
+//                    }
+//                });
 
-                    }
+               // HiApp.photo.openCamera(MainActivity.this);
 
-                    @Override
-                    public void onResponse(String response) {
-
-                    }
-                });
-
-
+                goActivity(HiPhotoActivity.class);
             }
         });
     }

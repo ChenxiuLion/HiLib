@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#87CEFA"
+
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#87CEFA"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:src="@drawable/ic_action_back"
+            />
+        <TextView
+            android:id="@+id/tv_hi_photo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="图片选择"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            />
+        <TextView
+            android:id="@+id/tv_hi_photo_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="(1/9)完成"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="#FFFFFF"
+            />
+    </FrameLayout>
+    <GridView
+        android:id="@+id/photo_grid"
+        android:layout_width="match_parent"
+        android:numColumns="3"
+        android:padding="5dp"
+
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
